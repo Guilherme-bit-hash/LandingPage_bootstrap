@@ -50,8 +50,47 @@
         -webkit-overflow-scrolling: touch;
       }
 
-      .nav-brand:hover{
-          background-color: rgb(108, 255, 255);
+      .navbar-brand:hover{
+          background-color: rgb(25, 8, 108) !important;
+      }
+
+      .navbar-brand{
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 30px;
+        padding: 12px 20px;
+        border: 2px solid #214b59;
+        transition: 0.9s;
+         box-shadow:0 0 10px rgb(190, 190, 237) ;
+         font-size: 2rem;
+         font-weight: bold;
+         letter-spacing: 2px;
+        text-shadow: 0 0 5px #00ffff;
+      }
+      .navbar-brand:focus{
+        color: aqua;
+        box-shadow:0 0 15px forestgreen;
+        background-color: #5a23c8;
+      }
+      .navbar{
+        background-color: rgb(0, 0, 64) !important;
+        border-radius: 5px;
+      }
+
+      .estrelas{
+        font-size: 1.4rem;
+        letter-spacing: 4px;
+        transition: 0.3s;
+
+        text-shadow: 0 0 5px gold,
+        0 0 10px gold,
+        0 0 20px orange;
+
+        animation: brilho 2s infinite alternate;
+      }
+
+      .d-flex::placeholder{
+        color: #6528e0;
       }
       .btn-bd-primary {
         --bd-violet-bg: #712cf9;
@@ -79,9 +118,6 @@
         display: block !important;
       }
 
-      /* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
 body {
   padding-top: 3rem;
@@ -90,61 +126,42 @@ body {
 }
 
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
 
-/* Carousel base class */
+
 .carousel {
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
 }
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-/* rtl:begin:ignore */
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-/* rtl:end:ignore */
 
-
-/* Featurettes
-------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0; 
 }
 
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
+
 .featurette-heading {
   letter-spacing: -.05rem;
 }
 
-/* rtl:end:remove */
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
 
 @media (min-width: 40em) {
-  /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
@@ -162,9 +179,7 @@ body {
   }
 }
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+
 
 body {
   padding-top: 3rem;
@@ -172,30 +187,19 @@ body {
   color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
 }
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -206,20 +210,14 @@ body {
 }
 
 
-/* Featurettes
-------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 5rem 0; 
 }
 
-/* Thin out the marketing headings */
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
 
 @media (min-width: 40em) {
-  /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
@@ -236,3 +234,4 @@ body {
     margin-top: 7rem;
   }
 }
+
